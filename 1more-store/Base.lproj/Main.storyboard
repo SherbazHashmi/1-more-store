@@ -19,6 +19,7 @@
         <array key="AvenirNext.ttc">
             <string>AvenirNext-DemiBold</string>
             <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -80,8 +81,14 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYZ-ld-wGW">
-                                        <rect key="frame" x="115.99999999999999" y="419" width="144.66666666666663" height="49.333333333333314"/>
+                                        <rect key="frame" x="115" y="419" width="145" height="49.333333333333314"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="36"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up for free to save your style, we can help you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="el4-HY-UHv">
+                                        <rect key="frame" x="70.000000000000014" y="468.33333333333331" width="236.33333333333337" height="41"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -93,10 +100,13 @@
                                     <constraint firstItem="avd-Qo-smR" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="5X8-BC-Sce"/>
                                     <constraint firstItem="avd-Qo-smR" firstAttribute="width" secondItem="xHl-BV-Kk9" secondAttribute="width" multiplier="0.7" id="AMR-QL-8Vf"/>
                                     <constraint firstItem="Cx4-BX-xJH" firstAttribute="height" secondItem="Ydr-l6-3xh" secondAttribute="height" multiplier="0.5" id="DfU-Ml-zpw"/>
+                                    <constraint firstItem="el4-HY-UHv" firstAttribute="width" secondItem="anq-hb-dWt" secondAttribute="width" multiplier="0.9" id="Git-N3-AYx"/>
                                     <constraint firstItem="anq-hb-dWt" firstAttribute="centerY" secondItem="je2-qB-2vy" secondAttribute="centerY" multiplier="1.2" id="HqC-jS-eQ4"/>
                                     <constraint firstItem="Cx4-BX-xJH" firstAttribute="centerY" secondItem="Ydr-l6-3xh" secondAttribute="centerY" id="MLa-OA-8Xw"/>
                                     <constraint firstItem="Ydr-l6-3xh" firstAttribute="width" secondItem="je2-qB-2vy" secondAttribute="width" multiplier="0.82" id="OVk-Jh-JG2"/>
                                     <constraint firstItem="Kze-Jc-9mV" firstAttribute="centerY" secondItem="je2-qB-2vy" secondAttribute="centerY" multiplier="1.6" id="Yoh-Fi-h5L"/>
+                                    <constraint firstItem="el4-HY-UHv" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="aLE-ud-16k"/>
+                                    <constraint firstItem="el4-HY-UHv" firstAttribute="top" secondItem="WYZ-ld-wGW" secondAttribute="bottom" id="aO2-41-Uc0"/>
                                     <constraint firstItem="anq-hb-dWt" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="dDe-NO-ZQl"/>
                                     <constraint firstItem="il6-uf-LJF" firstAttribute="leading" secondItem="je2-qB-2vy" secondAttribute="leading" id="dzG-lw-nuE"/>
                                     <constraint firstItem="xHl-BV-Kk9" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="e27-SX-nwY"/>
