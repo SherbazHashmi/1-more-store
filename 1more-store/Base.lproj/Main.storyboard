@@ -16,6 +16,9 @@
         <array key="Avenir.ttc">
             <string>Avenir-Light</string>
         </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Login View Controller-->
@@ -30,26 +33,32 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xHl-BV-Kk9">
-                                        <rect key="frame" x="112.66666666666669" y="72" width="150" height="41.666666666666657"/>
+                                        <rect key="frame" x="112.66666666666667" y="72" width="150.33333333333331" height="41.666666666666657"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xHl-BV-Kk9" secondAttribute="height" multiplier="65:18" id="mfe-U9-bVY"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stripes-transparent" translatesAutoresizingMaskIntoConstraints="NO" id="il6-uf-LJF">
+                                        <rect key="frame" x="0.0" y="113" width="375" height="528"/>
+                                        <color key="backgroundColor" red="0.23702904582023621" green="0.18887701630592346" blue="0.59219062328338623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can't stop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avd-Qo-smR">
-                                        <rect key="frame" x="135" y="113.99999999999999" width="105" height="56.333333333333329"/>
+                                        <rect key="frame" x="134.66666666666666" y="114.33333333333333" width="105.66666666666666" height="56.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="41"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Kze-Jc-9mV">
-                                        <rect key="frame" x="50" y="611.66666666666663" width="275" height="76"/>
+                                        <rect key="frame" x="50" y="606" width="275" height="88"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydr-l6-3xh">
-                                                <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="36"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zW8-RT-I6m">
-                                                <rect key="frame" x="0.0" y="46" width="275" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMq-xD-aw2">
+                                                <rect key="frame" x="0.0" y="52" width="275" height="36"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                         </subviews>
@@ -60,13 +69,17 @@
                                     <constraint firstItem="avd-Qo-smR" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="5X8-BC-Sce"/>
                                     <constraint firstItem="avd-Qo-smR" firstAttribute="width" secondItem="xHl-BV-Kk9" secondAttribute="width" multiplier="0.7" id="AMR-QL-8Vf"/>
                                     <constraint firstItem="Kze-Jc-9mV" firstAttribute="centerY" secondItem="je2-qB-2vy" secondAttribute="centerY" multiplier="1.6" id="Yoh-Fi-h5L"/>
+                                    <constraint firstItem="il6-uf-LJF" firstAttribute="leading" secondItem="je2-qB-2vy" secondAttribute="leading" id="dzG-lw-nuE"/>
                                     <constraint firstItem="xHl-BV-Kk9" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="e27-SX-nwY"/>
+                                    <constraint firstItem="il6-uf-LJF" firstAttribute="top" secondItem="xHl-BV-Kk9" secondAttribute="bottom" id="f3H-K7-aOT"/>
                                     <constraint firstItem="Kze-Jc-9mV" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="fuE-eQ-xSw"/>
                                     <constraint firstItem="avd-Qo-smR" firstAttribute="top" secondItem="xHl-BV-Kk9" secondAttribute="bottom" id="gbH-mv-4jq"/>
                                     <constraint firstItem="Kze-Jc-9mV" firstAttribute="leading" secondItem="je2-qB-2vy" secondAttribute="leading" constant="50" id="icC-2T-p4n"/>
                                     <constraint firstItem="xHl-BV-Kk9" firstAttribute="width" secondItem="je2-qB-2vy" secondAttribute="width" multiplier="0.4" id="mln-SY-tGi"/>
+                                    <constraint firstAttribute="trailing" secondItem="il6-uf-LJF" secondAttribute="trailing" id="roB-0k-hBX"/>
                                     <constraint firstAttribute="trailing" secondItem="Kze-Jc-9mV" secondAttribute="trailing" constant="50" id="slq-dS-Hh4"/>
                                     <constraint firstItem="xHl-BV-Kk9" firstAttribute="top" secondItem="je2-qB-2vy" secondAttribute="topMargin" constant="20" id="u9s-sJ-GJU"/>
+                                    <constraint firstItem="il6-uf-LJF" firstAttribute="height" secondItem="je2-qB-2vy" secondAttribute="height" multiplier="0.65" id="y6f-e7-Dc2"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -118,5 +131,6 @@
     <resources>
         <image name="BG" width="375" height="667"/>
         <image name="logo" width="130" height="36"/>
+        <image name="stripes-transparent" width="375" height="470"/>
     </resources>
 </document>

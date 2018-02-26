@@ -13,6 +13,15 @@
 		3C20B2E120424ACE00E714A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C20B2E020424ACE00E714A5 /* Assets.xcassets */; };
 		3C20B2E420424ACE00E714A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C20B2E220424ACE00E714A5 /* LaunchScreen.storyboard */; };
 		3C20B2EF20424ACE00E714A5 /* _more_storeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20B2EE20424ACE00E714A5 /* _more_storeTests.swift */; };
+		3C66713D2043C9D500A260C6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66713C2043C9D500A260C6 /* RoundedButton.swift */; };
+		3C6671412043CA2000A260C6 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6671402043CA2000A260C6 /* utils.swift */; };
+		3C6671422043CA2000A260C6 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6671402043CA2000A260C6 /* utils.swift */; };
+		3C6671442043CD3D00A260C6 /* FacebookLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6671432043CD3D00A260C6 /* FacebookLoginButton.swift */; };
+		3C6671452043CD3D00A260C6 /* FacebookLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6671432043CD3D00A260C6 /* FacebookLoginButton.swift */; };
+		3C6671462043CDFF00A260C6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66713C2043C9D500A260C6 /* RoundedButton.swift */; };
+		3C6671472043CE0800A260C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C20B2DD20424ACE00E714A5 /* Main.storyboard */; };
+		3C66714A2043CEC600A260C6 /* LaterLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6671492043CEC600A260C6 /* LaterLoginButton.swift */; };
+		3C66714B2043CEC600A260C6 /* LaterLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6671492043CEC600A260C6 /* LaterLoginButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,10 @@
 		3C20B2EA20424ACE00E714A5 /* 1more-storeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "1more-storeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C20B2EE20424ACE00E714A5 /* _more_storeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _more_storeTests.swift; sourceTree = "<group>"; };
 		3C20B2F020424ACE00E714A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C66713C2043C9D500A260C6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		3C6671402043CA2000A260C6 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		3C6671432043CD3D00A260C6 /* FacebookLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginButton.swift; sourceTree = "<group>"; };
+		3C6671492043CEC600A260C6 /* LaterLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterLoginButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +90,11 @@
 		3C20B2D820424ACE00E714A5 /* 1more-store */ = {
 			isa = PBXGroup;
 			children = (
-				3C6671362043C60D00A260C6 /* Model */,
-				3C6671372043C61800A260C6 /* View */,
-				3C6671382043C62200A260C6 /* Controller */,
+				3C66713F2043C9E800A260C6 /* Services */,
+				3C66713E2043C9E000A260C6 /* Utilities */,
+				3C6671392043C99E00A260C6 /* Model */,
+				3C66713A2043C9A500A260C6 /* View */,
+				3C66713B2043C9AA00A260C6 /* Controller */,
 				3C20B2D920424ACE00E714A5 /* AppDelegate.swift */,
 				3C20B2DD20424ACE00E714A5 /* Main.storyboard */,
 				3C20B2E020424ACE00E714A5 /* Assets.xcassets */,
@@ -98,29 +113,52 @@
 			path = "1more-storeTests";
 			sourceTree = "<group>";
 		};
-		3C6671362043C60D00A260C6 /* Model */ = {
+		3C6671392043C99E00A260C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Model;
-			path = "New Group";
+			path = Model;
 			sourceTree = "<group>";
 		};
-		3C6671372043C61800A260C6 /* View */ = {
+		3C66713A2043C9A500A260C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C66714D2043CEDF00A260C6 /* Buttons */,
 			);
-			name = View;
-			path = "New Group1";
+			path = View;
 			sourceTree = "<group>";
 		};
-		3C6671382043C62200A260C6 /* Controller */ = {
+		3C66713B2043C9AA00A260C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				3C20B2DB20424ACE00E714A5 /* LoginViewController.swift */,
 			);
-			name = Controller;
-			path = "New Group2";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C66713E2043C9E000A260C6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3C6671402043CA2000A260C6 /* utils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3C66713F2043C9E800A260C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3C66714D2043CEDF00A260C6 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3C66713C2043C9D500A260C6 /* RoundedButton.swift */,
+				3C6671432043CD3D00A260C6 /* FacebookLoginButton.swift */,
+				3C6671492043CEC600A260C6 /* LaterLoginButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6671472043CE0800A260C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C66714A2043CEC600A260C6 /* LaterLoginButton.swift in Sources */,
 				3C20B2DC20424ACE00E714A5 /* LoginViewController.swift in Sources */,
+				3C6671442043CD3D00A260C6 /* FacebookLoginButton.swift in Sources */,
+				3C66713D2043C9D500A260C6 /* RoundedButton.swift in Sources */,
 				3C20B2DA20424ACE00E714A5 /* AppDelegate.swift in Sources */,
+				3C6671412043CA2000A260C6 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C20B2EF20424ACE00E714A5 /* _more_storeTests.swift in Sources */,
+				3C66714B2043CEC600A260C6 /* LaterLoginButton.swift in Sources */,
+				3C6671422043CA2000A260C6 /* utils.swift in Sources */,
+				3C6671452043CD3D00A260C6 /* FacebookLoginButton.swift in Sources */,
+				3C6671462043CDFF00A260C6 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
