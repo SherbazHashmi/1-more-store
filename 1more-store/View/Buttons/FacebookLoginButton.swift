@@ -9,9 +9,18 @@
 import UIKit
 @IBDesignable
 class FacebookLoginButton: RoundedButton {
-
+    
+    override func draw(_ rect: CGRect) {
+        let size = frame.height * 0.6
+        let facebookLogo = UIImageView(frame: CGRect(x: 15, y: (frame.height / 2) - (size / 2), width: size, height: size))
+        facebookLogo.image = #imageLiteral(resourceName: "facebook-logo")
+        addSubview(facebookLogo)
+        
+        facebookLogo.clipsToBounds = true
+        
+    }
+    
     override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
         customiseView()
     }
     

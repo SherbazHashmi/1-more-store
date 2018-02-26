@@ -54,12 +54,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydr-l6-3xh" customClass="FacebookLoginButton" customModule="_more_store" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="54"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Login With Facebook"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMq-xD-aw2" customClass="LaterLoginButton" customModule="_more_store" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="70" width="275" height="54.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Login Later"/>
                                             </button>
                                         </subviews>
                                         <constraints>
