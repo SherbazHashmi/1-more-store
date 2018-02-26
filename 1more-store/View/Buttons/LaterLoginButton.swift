@@ -7,15 +7,24 @@
 //
 
 import UIKit
-
+@IBDesignable
 class LaterLoginButton: RoundedButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
     }
-    */
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        customiseView()
+    }
+    
+    override func customiseView() {
+        super.customiseView()
+        
+        setTitle("Login Later", for: .normal)
+        setTitleColor(UIColor.white, for: .normal)
+        backgroundColor = UIColor.rgb(red: 24, green: 32, blue: 117, alpha: 1)
+    }
 
 }

@@ -20,6 +20,6 @@ class RoundedButton: UIButton {
     }
     
     func customiseView() {
-        layer.cornerRadius = 25
+        layer.cornerRadius = 10
     }
 }
