@@ -1,5 +1,5 @@
 //
-//  FeatureViewController.swift
+//  CategoryViewController.swift
 //  1more-store
 //
 //  Created by Sherbaz Hashmi on 26/2/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeatureViewController: UIViewController {
+class CategoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
