@@ -22,6 +22,7 @@
 		3C6671472043CE0800A260C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C20B2DD20424ACE00E714A5 /* Main.storyboard */; };
 		3C66714A2043CEC600A260C6 /* LaterLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6671492043CEC600A260C6 /* LaterLoginButton.swift */; };
 		3C66714B2043CEC600A260C6 /* LaterLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6671492043CEC600A260C6 /* LaterLoginButton.swift */; };
+		3CA47024204423E100E61458 /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA47023204423E100E61458 /* FeatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3C6671402043CA2000A260C6 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		3C6671432043CD3D00A260C6 /* FacebookLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginButton.swift; sourceTree = "<group>"; };
 		3C6671492043CEC600A260C6 /* LaterLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterLoginButton.swift; sourceTree = "<group>"; };
+		3CA47023204423E100E61458 /* FeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				3C20B2DB20424ACE00E714A5 /* LoginViewController.swift */,
+				3CA47023204423E100E61458 /* FeatureViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C66714A2043CEC600A260C6 /* LaterLoginButton.swift in Sources */,
+				3CA47024204423E100E61458 /* FeatureViewController.swift in Sources */,
 				3C20B2DC20424ACE00E714A5 /* LoginViewController.swift in Sources */,
 				3C6671442043CD3D00A260C6 /* FacebookLoginButton.swift in Sources */,
 				3C66713D2043C9D500A260C6 /* RoundedButton.swift in Sources */,
