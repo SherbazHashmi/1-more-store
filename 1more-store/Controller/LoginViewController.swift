@@ -19,11 +19,11 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func onPressFacebookButton(_ sender: Any) {
-        performSegue(withIdentifier: "FeatureVC", sender: nil)
+        performSegue(withIdentifier: "FeaturedVC", sender: nil)
     }
     
     @IBAction func onPressLoginLater(_ sender: Any) {
-        performSegue(withIdentifier: "FeatureVC", sender: nil)
+        performSegue(withIdentifier: "FeaturedVC", sender: nil)
     }
     
     

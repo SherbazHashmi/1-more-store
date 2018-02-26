@@ -9,9 +9,14 @@
 import UIKit
 
 class FeatureViewController: UIViewController {
-
+    
+    @IBAction func testBtn(_ sender: Any) {
+        performSegue(withIdentifier: "CategoryViewController", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
         // Do any additional setup after loading the view.
     }
@@ -21,4 +26,9 @@ class FeatureViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let categoryVC = segue.destination as? CategoryViewController {
+        
+        }
+    }
 }
