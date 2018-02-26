@@ -11,7 +11,7 @@ import UIKit
 class LaterLoginButton: RoundedButton {
 
     override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
+        customiseView()
     }
     
     override func awakeFromNib() {

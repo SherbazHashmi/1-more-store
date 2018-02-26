@@ -66,12 +66,20 @@
                                             <constraint firstItem="aMq-xD-aw2" firstAttribute="height" secondItem="Ydr-l6-3xh" secondAttribute="height" id="1OT-qv-pt8"/>
                                         </constraints>
                                     </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cx4-BX-xJH">
+                                        <rect key="frame" x="60" y="598.66666666666663" width="32.333333333333343" height="32.666666666666629"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Cx4-BX-xJH" secondAttribute="height" multiplier="1:1" id="rxg-WZ-Q3b"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.23702904582023621" green="0.18887701630592346" blue="0.59219062328338623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="Ydr-l6-3xh" firstAttribute="height" secondItem="xHl-BV-Kk9" secondAttribute="height" multiplier="1.3" id="4Bo-mE-BWH"/>
                                     <constraint firstItem="avd-Qo-smR" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="5X8-BC-Sce"/>
                                     <constraint firstItem="avd-Qo-smR" firstAttribute="width" secondItem="xHl-BV-Kk9" secondAttribute="width" multiplier="0.7" id="AMR-QL-8Vf"/>
+                                    <constraint firstItem="Cx4-BX-xJH" firstAttribute="height" secondItem="Ydr-l6-3xh" secondAttribute="height" multiplier="0.6" id="DfU-Ml-zpw"/>
+                                    <constraint firstItem="Cx4-BX-xJH" firstAttribute="centerY" secondItem="Ydr-l6-3xh" secondAttribute="centerY" id="MLa-OA-8Xw"/>
                                     <constraint firstItem="Kze-Jc-9mV" firstAttribute="centerY" secondItem="je2-qB-2vy" secondAttribute="centerY" multiplier="1.6" id="Yoh-Fi-h5L"/>
                                     <constraint firstItem="il6-uf-LJF" firstAttribute="leading" secondItem="je2-qB-2vy" secondAttribute="leading" id="dzG-lw-nuE"/>
                                     <constraint firstItem="xHl-BV-Kk9" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="e27-SX-nwY"/>
@@ -79,6 +87,7 @@
                                     <constraint firstItem="Kze-Jc-9mV" firstAttribute="centerX" secondItem="je2-qB-2vy" secondAttribute="centerX" id="fuE-eQ-xSw"/>
                                     <constraint firstItem="avd-Qo-smR" firstAttribute="top" secondItem="xHl-BV-Kk9" secondAttribute="bottom" id="gbH-mv-4jq"/>
                                     <constraint firstItem="Kze-Jc-9mV" firstAttribute="leading" secondItem="je2-qB-2vy" secondAttribute="leading" constant="50" id="icC-2T-p4n"/>
+                                    <constraint firstItem="Cx4-BX-xJH" firstAttribute="leading" secondItem="Ydr-l6-3xh" secondAttribute="leading" constant="10" id="jZe-sd-LmB"/>
                                     <constraint firstItem="xHl-BV-Kk9" firstAttribute="width" secondItem="je2-qB-2vy" secondAttribute="width" multiplier="0.4" id="mln-SY-tGi"/>
                                     <constraint firstAttribute="trailing" secondItem="il6-uf-LJF" secondAttribute="trailing" id="roB-0k-hBX"/>
                                     <constraint firstAttribute="trailing" secondItem="Kze-Jc-9mV" secondAttribute="trailing" constant="50" id="slq-dS-Hh4"/>
@@ -96,6 +105,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="LoginButton" destination="Ydr-l6-3xh" id="7ma-Ck-aZj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="hFd-nK-1lK">
@@ -134,6 +146,7 @@
     </scenes>
     <resources>
         <image name="BG" width="375" height="667"/>
+        <image name="facebook-logo" width="24" height="24"/>
         <image name="logo" width="130" height="36"/>
         <image name="stripes-transparent" width="375" height="470"/>
     </resources>
