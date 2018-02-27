@@ -11,26 +11,21 @@ import XCTest
 
 class _more_storeTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testCharacterArray () {
+        
+        let utils = Utilities ()
+        
+        defaultCharArrTestCase(actual: "Hello", expected: ["H","e","l","l","o"], utils: utils)
+        defaultCharArrTestCase(actual: "", expected: [], utils: utils)
+        defaultCharArrTestCase(actual: "Testing With Spaces", expected: ["T","e","s","t","i","n","g", " ", "W", "i", "t", "h"," ", "S","p","a","c","e","s"], utils: utils)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func defaultCharArrTestCase (actual : String, expected : [Character], utils : Utilities) {
+        let actualChars = utils.toChars(input: actual)
+        XCTAssertTrue(actualChars == expected, "Expected " + String(expected) + " Actual " + String(actual))
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+
     
 }

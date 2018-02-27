@@ -33,11 +33,15 @@ class Utilities {
         return hashCode
     }
     
-    func toChars (input : String) -> [Character] {
-        if(input.count == 1) {
-            return [input.first!]
+    public func toChars (input : String) -> [Character] {
+        if(input.count > 0) {
+            if(input.count == 1) {
+                return [input.first!]
+            } else {
+                return [input.first!] + toChars(input:String(input.dropFirst()))
+            }
         } else {
-            return [input.first!] + toChars(input:String(input.dropFirst()))
+            return []
         }
     }
     
