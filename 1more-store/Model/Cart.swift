@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class Cart {
+    var numberOfItems : Int
+    var totalPrice : Double
+    // <Item, Price>
+    var items : Dictionary<Item, Int>
+    
+    init() {
+        numberOfItems = 0
+        totalPrice = 0
+        items = [:] 
+    }
+    
+    
+}

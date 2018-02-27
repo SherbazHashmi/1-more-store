@@ -199,7 +199,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerCell" rowHeight="336" id="9RR-A5-IeU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerCell" rowHeight="336" id="9RR-A5-IeU" customClass="FeaturedHeaderTableViewCell" customModule="_more_store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="336"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9RR-A5-IeU" id="9Kt-jD-ZPQ">
@@ -235,8 +235,13 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="677-Ue-6v4" secondAttribute="bottom" constant="30" id="vr9-Hg-66I"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bannerImage" destination="GTA-U2-Oe9" id="wFV-KT-Zw4"/>
+                                            <outlet property="headerLabel" destination="677-Ue-6v4" id="UXG-VM-TVh"/>
+                                            <outlet property="subheaderLabel" destination="nWE-qb-gfU" id="Ls5-cv-mOR"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="G8p-ii-Y8r">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="G8p-ii-Y8r" customClass="FeaturedTableViewCell" customModule="_more_store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="364" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G8p-ii-Y8r" id="qLs-nn-caK">
@@ -279,6 +284,11 @@
                                                 <constraint firstItem="Huz-ii-7pL" firstAttribute="height" secondItem="qLs-nn-caK" secondAttribute="height" id="v2l-Ct-f1D"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryName" destination="7Sq-Zm-BiJ" id="crc-97-a9Q"/>
+                                            <outlet property="numberOfItems" destination="OJV-se-szL" id="LLN-ZH-Pba"/>
+                                            <outlet property="productImage" destination="Huz-ii-7pL" id="AiM-T4-WSV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
