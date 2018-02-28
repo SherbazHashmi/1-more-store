@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C07761620469BA300C0FD44 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C07761520469BA300C0FD44 /* CartButton.swift */; };
+		3C07761720469BA300C0FD44 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C07761520469BA300C0FD44 /* CartButton.swift */; };
 		3C20B2DA20424ACE00E714A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20B2D920424ACE00E714A5 /* AppDelegate.swift */; };
 		3C20B2DC20424ACE00E714A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20B2DB20424ACE00E714A5 /* LoginViewController.swift */; };
 		3C20B2DF20424ACE00E714A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C20B2DD20424ACE00E714A5 /* Main.storyboard */; };
@@ -56,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C07761520469BA300C0FD44 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		3C20B2D620424ACE00E714A5 /* 1more-store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1more-store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C20B2D920424ACE00E714A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C20B2DB20424ACE00E714A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C07761420469B8F00C0FD44 /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				3C07761520469BA300C0FD44 /* CartButton.swift */,
+			);
+			path = "Navigation Bar";
+			sourceTree = "<group>";
+		};
 		3C20B2CD20424ACE00E714A5 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +170,7 @@
 		3C66713A2043C9A500A260C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C07761420469B8F00C0FD44 /* Navigation Bar */,
 				3CDB7A2C2044F445002A872B /* Table View Cells */,
 				3C66714D2043CEDF00A260C6 /* Buttons */,
 			);
@@ -321,6 +333,7 @@
 				3CA47024204423E100E61458 /* FeatureViewController.swift in Sources */,
 				3C20B2DC20424ACE00E714A5 /* LoginViewController.swift in Sources */,
 				3C6671442043CD3D00A260C6 /* FacebookLoginButton.swift in Sources */,
+				3C07761620469BA300C0FD44 /* CartButton.swift in Sources */,
 				3CDB7A2120445295002A872B /* Item.swift in Sources */,
 				3CDB7A14204439B0002A872B /* CategoryViewController.swift in Sources */,
 				3CDB7A2E2044F463002A872B /* FeaturedTableViewCell.swift in Sources */,
@@ -341,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CDB7A2220445295002A872B /* Item.swift in Sources */,
+				3C07761720469BA300C0FD44 /* CartButton.swift in Sources */,
 				3C20B2EF20424ACE00E714A5 /* _more_storeTests.swift in Sources */,
 				3CDB7A3520451026002A872B /* Banner.swift in Sources */,
 				3CDB7A2B204454F2002A872B /* Cart.swift in Sources */,

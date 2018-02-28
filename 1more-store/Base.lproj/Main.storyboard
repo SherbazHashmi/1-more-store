@@ -307,7 +307,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu-icon" id="9gr-UO-gAT">
                             <inset key="imageInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="shopping-bag-icon" id="kGh-zd-wTz">
+                        <barButtonItem key="rightBarButtonItem" image="shopping-bag-icon" id="kGh-zd-wTz" customClass="CartButton" customModule="_more_store" customModuleProvider="target">
                             <inset key="imageInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
                             <connections>
                                 <action selector="testBtn:" destination="uBu-qb-v18" id="yho-E2-Xdx"/>
