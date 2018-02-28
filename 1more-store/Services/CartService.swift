@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class CartService {
+    public static let instance = CartService()
+    
+    private let cart = Cart ()
+    
+    public func getCart () -> Cart {
+        return cart;
+    }
+    
+    public static func addItem (item : Item) {
+        
+    }
+}

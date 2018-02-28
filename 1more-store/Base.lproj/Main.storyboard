@@ -210,18 +210,18 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="335.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Arrival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="677-Ue-6v4">
-                                                    <rect key="frame" x="15" y="255" width="157.5" height="40"/>
+                                                    <rect key="frame" x="25" y="235" width="157.5" height="40"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="29"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FALL WINTER 2017-18 FASHION SHOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="2" translatesAutoresizingMaskIntoConstraints="NO" id="nWE-qb-gfU">
-                                                    <rect key="frame" x="15" y="300" width="262" height="21"/>
+                                                    <rect key="frame" x="25" y="285" width="262" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -229,10 +229,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="GTA-U2-Oe9" secondAttribute="trailing" id="AUC-rz-1S5"/>
                                                 <constraint firstItem="nWE-qb-gfU" firstAttribute="leading" secondItem="677-Ue-6v4" secondAttribute="leading" id="RUh-2M-hjw"/>
                                                 <constraint firstItem="GTA-U2-Oe9" firstAttribute="top" secondItem="9Kt-jD-ZPQ" secondAttribute="top" id="XiY-DE-r2y"/>
-                                                <constraint firstItem="677-Ue-6v4" firstAttribute="leading" secondItem="9Kt-jD-ZPQ" secondAttribute="leadingMargin" id="ZvU-Bn-CU3"/>
+                                                <constraint firstItem="677-Ue-6v4" firstAttribute="leading" secondItem="9Kt-jD-ZPQ" secondAttribute="leadingMargin" constant="10" id="ZvU-Bn-CU3"/>
                                                 <constraint firstAttribute="bottom" secondItem="GTA-U2-Oe9" secondAttribute="bottom" id="rKF-LF-1fC"/>
-                                                <constraint firstItem="nWE-qb-gfU" firstAttribute="top" secondItem="677-Ue-6v4" secondAttribute="bottom" constant="5" id="tSV-mb-kNj"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="677-Ue-6v4" secondAttribute="bottom" constant="30" id="vr9-Hg-66I"/>
+                                                <constraint firstItem="nWE-qb-gfU" firstAttribute="top" secondItem="677-Ue-6v4" secondAttribute="bottom" constant="10" id="tSV-mb-kNj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="677-Ue-6v4" secondAttribute="bottom" constant="50" id="vr9-Hg-66I"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -249,7 +249,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feature-bag" translatesAutoresizingMaskIntoConstraints="NO" id="Huz-ii-7pL" userLabel="CateogryImage">
-                                                    <rect key="frame" x="130" y="-1" width="225" height="140"/>
+                                                    <rect key="frame" x="137" y="0.0" width="218" height="140"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sq-Zm-BiJ" userLabel="CategoryName">
                                                     <rect key="frame" x="35" y="31" width="71" height="43"/>
@@ -264,24 +264,25 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feature-line" translatesAutoresizingMaskIntoConstraints="NO" id="MAc-Y0-MJQ" userLabel="ConnectingLine">
-                                                    <rect key="frame" x="106" y="88" width="72" height="1"/>
+                                                    <rect key="frame" x="106" y="88" width="56.5" height="1"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="MAc-Y0-MJQ" secondAttribute="height" multiplier="51:1" id="Tja-Cb-IpG"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Huz-ii-7pL" secondAttribute="trailing" constant="20" id="GfR-cL-uE0"/>
+                                                <constraint firstItem="MAc-Y0-MJQ" firstAttribute="width" secondItem="qLs-nn-caK" secondAttribute="width" multiplier="0.15" id="5Ml-qe-SxY"/>
                                                 <constraint firstItem="OJV-se-szL" firstAttribute="leading" secondItem="7Sq-Zm-BiJ" secondAttribute="leading" id="Jua-e4-P4N"/>
                                                 <constraint firstItem="7Sq-Zm-BiJ" firstAttribute="centerY" secondItem="qLs-nn-caK" secondAttribute="centerY" multiplier="0.75" id="R6p-ud-AZ7"/>
+                                                <constraint firstAttribute="trailing" secondItem="Huz-ii-7pL" secondAttribute="trailing" constant="20" id="Uh2-HI-2f0"/>
                                                 <constraint firstItem="Huz-ii-7pL" firstAttribute="centerY" secondItem="qLs-nn-caK" secondAttribute="centerY" id="XQC-Qj-C3M"/>
+                                                <constraint firstItem="Huz-ii-7pL" firstAttribute="top" secondItem="qLs-nn-caK" secondAttribute="top" id="XrK-Qu-qql"/>
                                                 <constraint firstItem="MAc-Y0-MJQ" firstAttribute="centerY" secondItem="OJV-se-szL" secondAttribute="centerY" id="ZSg-zv-2Ru"/>
                                                 <constraint firstItem="MAc-Y0-MJQ" firstAttribute="leading" secondItem="OJV-se-szL" secondAttribute="trailing" constant="5" id="cg2-0x-3sj"/>
-                                                <constraint firstItem="MAc-Y0-MJQ" firstAttribute="width" secondItem="Huz-ii-7pL" secondAttribute="width" multiplier="0.32" id="fGx-hI-sXD"/>
                                                 <constraint firstItem="7Sq-Zm-BiJ" firstAttribute="leading" secondItem="qLs-nn-caK" secondAttribute="leadingMargin" constant="20" id="fTe-3r-r45"/>
-                                                <constraint firstItem="Huz-ii-7pL" firstAttribute="width" secondItem="qLs-nn-caK" secondAttribute="width" multiplier="0.6" id="leZ-LH-Yv6"/>
                                                 <constraint firstItem="OJV-se-szL" firstAttribute="top" secondItem="7Sq-Zm-BiJ" secondAttribute="bottom" constant="3" id="ufL-zu-fr8"/>
                                                 <constraint firstItem="Huz-ii-7pL" firstAttribute="height" secondItem="qLs-nn-caK" secondAttribute="height" id="v2l-Ct-f1D"/>
+                                                <constraint firstItem="Huz-ii-7pL" firstAttribute="leading" secondItem="7Sq-Zm-BiJ" secondAttribute="trailing" constant="31" id="zcu-Qp-NDX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -314,6 +315,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="featureTableView" destination="eug-0n-QzA" id="K48-3J-ii5"/>
                         <segue destination="Nde-n2-Z5C" kind="show" identifier="CategoryViewController" id="mSZ-0q-stJ"/>
                     </connections>
                 </viewController>

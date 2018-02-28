@@ -13,9 +13,9 @@ class FeaturedHeaderTableViewCell: UITableViewCell {
     @IBOutlet weak var headerLabel : UILabel!
     @IBOutlet weak var subheaderLabel : UILabel!
     
-    func populateCell (bannerImage : UIImageView, headerText : String, subheaderText : String) {
-        self.bannerImage = bannerImage
-        headerLabel.text = headerText
-        subheaderLabel.text = subheaderText
+    func populateCell (banner : Banner) {
+        self.bannerImage.image = UIImage(named: banner.imageName)
+        headerLabel.text = banner.title
+        subheaderLabel.text = banner.subTitle
     }
 }

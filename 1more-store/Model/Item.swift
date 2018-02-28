@@ -13,7 +13,7 @@ class Item : Hashable , Equatable {
     var hashValue: Int
     
     static func ==(lhs: Item, rhs: Item) -> Bool {
-        return lhs.hashValue > rhs.hashValue
+        return lhs.name == rhs.name
     }
     
     private(set) public var name : String
