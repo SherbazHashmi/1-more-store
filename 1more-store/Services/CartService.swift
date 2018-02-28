@@ -17,7 +17,12 @@ class CartService {
         return cart;
     }
     
-    public static func addItem (item : Item) {
-        
+    public func addItem (item : Item) {
+        cart.addItem(item: item)
     }
+    
+    public func removeItem (item : Item) {
+        cart.removeItem(item: item)
+    }
+    
 }

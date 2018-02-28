@@ -25,7 +25,8 @@ class Utilities {
             var i = 0
             while  (i < input.count) {
                 for character in inputCharacters {
-                    hashCode = 31 * hashCode + inputCharacters.index(of: character)!
+                    let currentHashCode = hashCode
+                    hashCode = 31 * currentHashCode + inputCharacters.index(of: character)!
                 }
                 i = i + 1
             }

@@ -38,6 +38,7 @@ class Cart {
     }
     
     func removeItem (item : Item) {
+        if items.count > 0 {
         let currentNumberOfItems = numberOfItems
         numberOfItems = currentNumberOfItems - 1
         
@@ -52,6 +53,7 @@ class Cart {
             }
         } else {
             // TODO : Throw Error Code
+        }
         }
     }
     

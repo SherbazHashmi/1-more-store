@@ -13,7 +13,7 @@ class Item : Hashable , Equatable {
     var hashValue: Int
     
     static func ==(lhs: Item, rhs: Item) -> Bool {
-        return lhs.name == rhs.name
+        return lhs.hashValue == rhs.hashValue
     }
     
     private(set) public var name : String
@@ -24,11 +24,9 @@ class Item : Hashable , Equatable {
         self.name = name
         self.price = price
         self.category = categeory
-        hashValue = 0
-    }
-    
-    func hashCode () {
         let utils = Utilities()
         hashValue = utils.hashCode(input: name)
     }
+    
+    
 }

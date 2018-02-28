@@ -59,11 +59,13 @@ class _more_storeTests: XCTestCase {
         defaultCartToStringTestCase(cart: cart, expected: "Item : Suit, Quantity : 1\n")
         
         cart.removeItem(item: itemThree)
-        defaultCartCountTestCase(cart: cart, expected: 1)
-        defaultCartToStringTestCase(cart: cart, expected: "Item : Suit, Quantity : 1\n")
+        defaultCartCountTestCase(cart: cart, expected: 0)
+        defaultCartToStringTestCase(cart: cart, expected: "")
         
+        cart.removeItem(item: itemOne)
+        defaultCartCountTestCase(cart: cart, expected: 0)
+        defaultCartToStringTestCase(cart: cart, expected: "")
 
-        
     }
     
     func defaultCartCountTestCase (cart : Cart, expected : Int) {
