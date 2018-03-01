@@ -9,24 +9,21 @@
 import UIKit
 
 class CartButton: UIBarButtonItem {
+
+    
     override func awakeFromNib() {
-        switch (CartService.instance.getNumberOfItems()) {
-        case 0 :
-            title = "1"
-            break
-        default :
-            image = UIImage(named: generateBagImageName())
-            break
+            print(generateBagImageName())
+            image = UIImage(named: generateBagImageName())!.withRenderingMode(.alwaysOriginal)
+
         }
-    }
-    
-    
+
     func generateBagImageName () -> String {
         let numberOfItems = CartService.instance.getNumberOfItems()
+        
         if numberOfItems > 10 {
             return "bag-10+"
         } else {
-            return "bag-" + String(numberOfItems)
+            return "bag-" + String(numberOfItems) 
         }
     }
 }
