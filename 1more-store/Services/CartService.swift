@@ -25,4 +25,8 @@ class CartService {
         cart.removeItem(item: item)
     }
     
+    public func getNumberOfItems () -> Int {
+        return cart.numberOfItems
+    }
+    
 }

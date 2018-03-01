@@ -26,9 +26,11 @@ class Utilities {
             while  (i < input.count) {
                 for character in inputCharacters {
                     let currentHashCode = hashCode
+                    print("Character " + String(character) + " " + String (inputCharacters.index(of: character)!))
                     hashCode = 31 * currentHashCode + inputCharacters.index(of: character)!
+                    i = i + 1
                 }
-                i = i + 1
+                
             }
         }
         return hashCode

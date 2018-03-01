@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        CartService.instance.addItem(item: Item(name: "TestItem", price: 5, categeory: DataService.instance.getCategories().first!))
     }
 
     @IBAction func onPressFacebookButton(_ sender: Any) {
