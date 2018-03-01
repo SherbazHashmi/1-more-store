@@ -13,7 +13,7 @@ class Category {
     private(set) public var imageName : String
     private(set) public var numberOfItems : Int
     private var items : [Item]
-    
+
     
     init(title : String, imageName : String, items :  [Item]) {
         self.title = title

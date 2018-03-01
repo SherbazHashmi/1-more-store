@@ -10,11 +10,12 @@ import UIKit
 
 class CategoryViewController: UIViewController {
 
+   // @IBOutlet weak var itemCollectionView : UICollection
+    private(set) public var category = Category(title: "Placeholder", imageName: "placeholder", items: [])
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
