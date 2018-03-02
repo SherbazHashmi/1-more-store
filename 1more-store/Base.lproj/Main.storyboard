@@ -432,7 +432,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$265" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOe-a2-w4x">
-                                                    <rect key="frame" x="70" y="251" width="39" height="20"/>
+                                                    <rect key="frame" x="69.666666666666671" y="251" width="39" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.24104857444763184" green="0.13360276818275452" blue="0.73729908466339111" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -444,7 +444,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summer Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfL-zX-AAi">
-                                                    <rect key="frame" x="47" y="227" width="85" height="19"/>
+                                                    <rect key="frame" x="47.666666666666657" y="227" width="83" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19" id="bWs-Jb-Mzw"/>
                                                     </constraints>
@@ -453,7 +453,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="summer-red" translatesAutoresizingMaskIntoConstraints="NO" id="zdD-ua-TVD">
-                                                    <rect key="frame" x="7" y="0.0" width="164" height="191"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="178" height="191"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -464,11 +464,11 @@
                                             <constraint firstItem="GfL-zX-AAi" firstAttribute="top" secondItem="MAP-aF-hWh" secondAttribute="bottom" constant="3" id="KXw-xw-LvX"/>
                                             <constraint firstItem="oOe-a2-w4x" firstAttribute="top" secondItem="GfL-zX-AAi" secondAttribute="bottom" constant="5" id="Qch-V6-QX3"/>
                                             <constraint firstItem="zdD-ua-TVD" firstAttribute="top" secondItem="OlA-PJ-2C2" secondAttribute="top" id="WKW-ii-r2j"/>
-                                            <constraint firstItem="GfL-zX-AAi" firstAttribute="leading" secondItem="MAP-aF-hWh" secondAttribute="leading" id="XNN-GR-I0m"/>
                                             <constraint firstItem="MAP-aF-hWh" firstAttribute="centerX" secondItem="OlA-PJ-2C2" secondAttribute="centerX" id="Xj2-aw-N23"/>
-                                            <constraint firstItem="zdD-ua-TVD" firstAttribute="centerX" secondItem="OlA-PJ-2C2" secondAttribute="centerX" id="cia-e2-7t1"/>
+                                            <constraint firstAttribute="trailing" secondItem="zdD-ua-TVD" secondAttribute="trailing" id="hQp-Kx-z4Y"/>
                                             <constraint firstItem="MAP-aF-hWh" firstAttribute="top" secondItem="zdD-ua-TVD" secondAttribute="bottom" constant="10" id="jZ9-vY-Dcy"/>
                                             <constraint firstItem="GfL-zX-AAi" firstAttribute="centerX" secondItem="oOe-a2-w4x" secondAttribute="centerX" id="rbu-F6-2Fb"/>
+                                            <constraint firstItem="zdD-ua-TVD" firstAttribute="leading" secondItem="OlA-PJ-2C2" secondAttribute="leading" id="v9s-ee-Ijb"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="companyName" destination="MAP-aF-hWh" id="rIc-TO-nHy"/>
@@ -498,6 +498,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="itemCollectionView" destination="Aqt-Vw-xCT" id="6ly-zl-Los"/>
+                        <outlet property="topStackView" destination="KUm-np-QBd" id="WZZ-Li-5Yb"/>
                         <segue destination="rbX-xN-oda" kind="show" id="zfy-Q3-0iJ"/>
                     </connections>
                 </viewController>

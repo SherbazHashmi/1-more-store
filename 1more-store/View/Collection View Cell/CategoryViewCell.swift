@@ -14,12 +14,23 @@ class CategoryViewCell: UICollectionViewCell {
     @IBOutlet weak var productName : UILabel!
     @IBOutlet weak var price : UILabel!
     
+    var width : CGFloat = 0.0
     
-    func populateCell (item : Item) {
+    
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        widthAnchor.constraint(equalToConstant: width).isActive = true
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func populateCell (item : Item, width : CGFloat) {
         image.image = UIImage(named: item.imageName)
         self.companyName.text = item.companyName
         self.productName.text = item.name
         self.price.text = "$" + String(item.price)
+        self.width = width
     }
     
 }

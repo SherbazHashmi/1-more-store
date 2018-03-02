@@ -8,9 +8,10 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CategoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 @IBOutlet weak var itemCollectionView : UICollectionView!
+    @IBOutlet weak var topStackView : UIStackView!
     
     public var category = Category(title: "Placeholder", imageName: "placeholder", items: [])
 
@@ -33,10 +34,15 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         return category.getItems().count
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (topStackView.frame.width / 2) - 10, height:  topStackView.frame.width)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as? CategoryViewCell  {
             let item = category.getItems()[indexPath.row]
-            cell.populateCell(item: item)
+            cell.populateCell(item: item, width: topStackView.frame.width /
+                2)
             return cell
         }
         return CategoryViewCell()

@@ -39,6 +39,8 @@ class FeatureViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let category = DataService.instance.getCategories()[indexPath.row - 1]
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.isSelected = false
         performSegue(withIdentifier: "CategoryViewController", sender: category)
     }
     
