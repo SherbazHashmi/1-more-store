@@ -8,18 +8,18 @@
 
 import UIKit
 
-class CategoryViewCollectionCell: UICollectionViewCell {
+class CategoryViewCell: UICollectionViewCell {
     @IBOutlet weak var image : UIImageView!
     @IBOutlet weak var companyName : UILabel!
     @IBOutlet weak var productName : UILabel!
     @IBOutlet weak var price : UILabel!
     
     
-    func populateCell (imageName : String, companyName : String, productName : String, price : Double) {
-        image.image = UIImage(named: imageName)
-        self.companyName.text = companyName
-        self.productName.text = productName
-        self.price.text = "$" + String(price)
+    func populateCell (item : Item) {
+        image.image = UIImage(named: item.imageName)
+        self.companyName.text = item.companyName
+        self.productName.text = item.name
+        self.price.text = "$" + String(item.price)
     }
     
 }

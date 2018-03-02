@@ -199,7 +199,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerCell" rowHeight="336" id="9RR-A5-IeU" customClass="FeaturedHeaderTableViewCell" customModule="_more_store" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerCell" rowHeight="336" id="9RR-A5-IeU" customClass="FeaturedHeaderTableViewCell" customModule="_more_store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="336"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9RR-A5-IeU" id="9Kt-jD-ZPQ">
@@ -241,7 +241,7 @@
                                             <outlet property="subheaderLabel" destination="nWE-qb-gfU" id="Ls5-cv-mOR"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="G8p-ii-Y8r" customClass="FeaturedTableViewCell" customModule="_more_store" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="G8p-ii-Y8r" customClass="FeaturedTableViewCell" customModule="_more_store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="364" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G8p-ii-Y8r" id="qLs-nn-caK">
@@ -326,7 +326,7 @@
         <!--Category-->
         <scene sceneID="7VV-Wr-rny">
             <objects>
-                <viewController title="Category" id="Nde-n2-Z5C" customClass="CategoryViewController" sceneMemberID="viewController">
+                <viewController title="Category" id="Nde-n2-Z5C" customClass="CategoryViewController" customModule="_more_store" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8nj-Ks-hSw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -424,9 +424,9 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryVC" id="OlA-PJ-2C2" customClass="CategoryViewCollectionCell" customModule="_more_store" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="OlA-PJ-2C2" customClass="CategoryViewCell" customModule="_more_store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="289"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="178" height="289"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -493,14 +493,69 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1IN-5i-6Oc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Category" id="iy0-TV-JJm">
+                    <navigationItem key="navigationItem" title="Category" id="iy0-TV-JJm" customClass="CategoryVCNavigationItem" customModule="_more_store" customModuleProvider="target">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="shopping-bag-icon" id="mV3-e5-1PB" customClass="CartButton" customModule="_more_store" customModuleProvider="target"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="itemCollectionView" destination="Aqt-Vw-xCT" id="6ly-zl-Los"/>
                         <segue destination="rbX-xN-oda" kind="show" id="zfy-Q3-0iJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfh-5c-1ia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="Qkd-E9-eAz" customClass="CategoryViewCell" customModule="_more_store" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="178" height="289"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                        <rect key="frame" x="0.0" y="0.0" width="178" height="289"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$265" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P66-ZB-dOC">
+                                <rect key="frame" x="70" y="251" width="39" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.24104857439999999" green="0.1336027682" blue="0.73729908470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cotton-On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kot-vH-iRO">
+                                <rect key="frame" x="47" y="201" width="84" height="23"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summer Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsA-24-za4">
+                                <rect key="frame" x="47" y="227" width="85" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="G5L-Vl-sf4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="summer-red" translatesAutoresizingMaskIntoConstraints="NO" id="ifZ-W1-97F">
+                                <rect key="frame" x="7" y="0.0" width="164" height="191"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <constraints>
+                        <constraint firstItem="P66-ZB-dOC" firstAttribute="top" secondItem="EsA-24-za4" secondAttribute="bottom" constant="5" id="3g3-26-ZGf"/>
+                        <constraint firstAttribute="bottom" secondItem="EsA-24-za4" secondAttribute="bottom" constant="43" id="Cwn-XI-hzW"/>
+                        <constraint firstItem="Kot-vH-iRO" firstAttribute="top" secondItem="ifZ-W1-97F" secondAttribute="bottom" constant="10" id="EDo-Wi-2xz"/>
+                        <constraint firstItem="ifZ-W1-97F" firstAttribute="top" secondItem="Qkd-E9-eAz" secondAttribute="top" id="FXz-E0-wz6"/>
+                        <constraint firstItem="EsA-24-za4" firstAttribute="leading" secondItem="Kot-vH-iRO" secondAttribute="leading" id="Rcu-gv-0Id"/>
+                        <constraint firstItem="Kot-vH-iRO" firstAttribute="centerX" secondItem="Qkd-E9-eAz" secondAttribute="centerX" id="S5G-0O-Ply"/>
+                        <constraint firstAttribute="bottomMargin" secondItem="P66-ZB-dOC" secondAttribute="bottom" constant="10" id="UGF-8H-R3l"/>
+                        <constraint firstItem="ifZ-W1-97F" firstAttribute="centerX" secondItem="Qkd-E9-eAz" secondAttribute="centerX" id="dVD-vv-2EZ"/>
+                        <constraint firstItem="EsA-24-za4" firstAttribute="top" secondItem="Kot-vH-iRO" secondAttribute="bottom" constant="3" id="qHn-bW-wpf"/>
+                        <constraint firstItem="P66-ZB-dOC" firstAttribute="centerX" secondItem="Qkd-E9-eAz" secondAttribute="centerX" id="tfb-IR-NyR"/>
+                        <constraint firstItem="EsA-24-za4" firstAttribute="centerX" secondItem="P66-ZB-dOC" secondAttribute="centerX" id="ygi-5E-r0U"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="8kc-D5-xY6"/>
+                    <connections>
+                        <outlet property="companyName" destination="Kot-vH-iRO" id="Rdm-bi-9YJ"/>
+                        <outlet property="image" destination="ifZ-W1-97F" id="DdG-pv-YGY"/>
+                        <outlet property="price" destination="P66-ZB-dOC" id="nfl-9s-vfi"/>
+                        <outlet property="productName" destination="EsA-24-za4" id="95A-Ns-qxE"/>
+                    </connections>
+                </collectionViewCell>
             </objects>
             <point key="canvasLocation" x="2660" y="32.512315270935964"/>
         </scene>

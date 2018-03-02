@@ -17,10 +17,8 @@ class FeaturedTableViewCell: UITableViewCell {
     func populateCell (category : Category) {
         self.categoryName.text = category.title
         self.productImage.image = UIImage(named: category.imageName)
-        self.numberOfItems.text = String(category.numberOfItems) + " items"
+        self.numberOfItems.text = String(category.getItems().count) + " items"
     }
     
-   
-
 }
 

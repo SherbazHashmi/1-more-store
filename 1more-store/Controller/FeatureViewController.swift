@@ -32,9 +32,16 @@ class FeatureViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let categoryVC = segue.destination as? CategoryViewController {
-         
+            assert(sender as? Category != nil)
+            categoryVC.initItems(category : sender as! Category)
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row - 1]
+        performSegue(withIdentifier: "CategoryViewController", sender: category)
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.getCategories().count + 1
@@ -52,6 +59,8 @@ class FeatureViewController: UIViewController, UITableViewDelegate, UITableViewD
             if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? FeaturedTableViewCell{
             let category = DataService.instance.getCategories()[indexPath.row - 1]
             cell.populateCell(category: category)
+                print(category.numberOfItems)
+                print(category.getItems().count)
             return cell
             }
         }

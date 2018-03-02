@@ -23,6 +23,7 @@ class Category {
     }
     
     func addItem (item : Item) {
+        numberOfItems += 1
         items.append(item)
     }
     

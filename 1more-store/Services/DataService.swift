@@ -18,9 +18,20 @@ class DataService {
     }()
     
     private var categories : [Category] = {
+        
+        //
+        // Dress Category
+        //
+        
+        let summerRed = Item(name: "Summer Red", price: 265, imageName: "summer-red", companyName: "Cotton-On", categeory: "Dresses")
+        let jerseyDress = Item(name: "Jersey Dress", price: 295, imageName: "jersey-dress-preview-large", companyName: "H&M", categeory: "Dresses")
+        let fireRed = Item(name: "Who's That Girl Midi", price: 390, imageName: "fire-red", companyName: "Alice McCall", categeory: "Dresses")
+        let oceanBlue = Item(name: "Mercer Floral-Print", price: 295, imageName: "ocean-blue", companyName: "Zimmerman", categeory: "Dresses")
+        
+        
         var cat = [Category] ()
         cat.append(Category(title: "Bags", imageName: "feature-bag", items: []))
-        cat.append(Category(title: "Dresses", imageName: "feature-dress", items: []))
+        cat.append(Category(title: "Dresses", imageName: "feature-dress", items: [summerRed,jerseyDress,fireRed,oceanBlue]))
         return cat
     }()
     

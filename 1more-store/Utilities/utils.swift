@@ -18,19 +18,22 @@ extension UIColor {
 
 class Utilities {
     
-    public func hashCode (input : String) -> Int  {
+    public func hashCode (input : String) -> Int {
+        return input.count
+    }
+    
+    public func oldHashCode (input : String) -> Int  {
         var hashCode : Int = 0
         if input.count > 0  {
             let inputCharacters  = toChars(input: input)
-            var i = 0
+            var i : Int = 0
             while  (i < input.count) {
                 for character in inputCharacters {
                     let currentHashCode = hashCode
                     print("Character " + String(character) + " " + String (inputCharacters.index(of: character)!))
-                    hashCode = 31 * currentHashCode + inputCharacters.index(of: character)!
+                    hashCode = 31 * (currentHashCode + i)
                     i = i + 1
                 }
-                
             }
         }
         return hashCode
