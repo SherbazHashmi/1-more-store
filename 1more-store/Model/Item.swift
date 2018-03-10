@@ -21,13 +21,18 @@ class Item : Hashable , Equatable {
     private(set) public var price : Double
     private(set) public var imageName : String
     private(set) public var category : String
+    private(set) public var bigImage : String
+    private(set) public var previewImages : [String]
     
-    init(name : String, price : Double, imageName : String, companyName : String, categeory : String) {
+    init(name : String, price : Double, imageName : String, companyName : String, categeory : String, bigImage : String, previewImages : [String]) {
         self.name = name
         self.price = price
         self.category = categeory
         self.imageName = imageName
         self.companyName = companyName
+        self.bigImage = bigImage
+        self.previewImages = previewImages
+        
         let utils = Utilities()
         hashValue = Int(utils.hashCode(input: name))
     }

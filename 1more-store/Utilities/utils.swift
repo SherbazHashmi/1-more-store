@@ -15,6 +15,12 @@ extension UIColor {
         }
 }
 
+extension String {
+    func toPrice () -> String {
+        return "$" + self
+    }
+}
+
 
 class Utilities {
     

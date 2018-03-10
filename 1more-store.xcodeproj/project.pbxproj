@@ -11,6 +11,8 @@
 		3C07761720469BA300C0FD44 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C07761520469BA300C0FD44 /* CartButton.swift */; };
 		3C07761B2047FDA200C0FD44 /* CategoryTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C07761A2047FDA200C0FD44 /* CategoryTopView.swift */; };
 		3C07761E2048071000C0FD44 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C07761D2048071000C0FD44 /* CategoryViewCell.swift */; };
+		3C0AE159204FFA480010765D /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0AE158204FFA480010765D /* CartViewController.swift */; };
+		3C0AE15A204FFA480010765D /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0AE158204FFA480010765D /* CartViewController.swift */; };
 		3C1119A02048F22E00E7E6C8 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C07761D2048071000C0FD44 /* CategoryViewCell.swift */; };
 		3C20B2DA20424ACE00E714A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20B2D920424ACE00E714A5 /* AppDelegate.swift */; };
 		3C20B2DC20424ACE00E714A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20B2DB20424ACE00E714A5 /* LoginViewController.swift */; };
@@ -64,6 +66,7 @@
 		3C07761520469BA300C0FD44 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		3C07761A2047FDA200C0FD44 /* CategoryTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTopView.swift; sourceTree = "<group>"; };
 		3C07761D2048071000C0FD44 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
+		3C0AE158204FFA480010765D /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		3C20B2D620424ACE00E714A5 /* 1more-store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1more-store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C20B2D920424ACE00E714A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C20B2DB20424ACE00E714A5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 				3CA47023204423E100E61458 /* FeatureViewController.swift */,
 				3CDB7A13204439B0002A872B /* CategoryViewController.swift */,
 				3CDB7A1620443B58002A872B /* ProductViewController.swift */,
+				3C0AE158204FFA480010765D /* CartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +371,7 @@
 				3C66713D2043C9D500A260C6 /* RoundedButton.swift in Sources */,
 				3CDB7A1720443B58002A872B /* ProductViewController.swift in Sources */,
 				3C20B2DA20424ACE00E714A5 /* AppDelegate.swift in Sources */,
+				3C0AE159204FFA480010765D /* CartViewController.swift in Sources */,
 				3C6671412043CA2000A260C6 /* utils.swift in Sources */,
 				3CDB7A3420451026002A872B /* Banner.swift in Sources */,
 				3CDB7A312044F47B002A872B /* FeaturedHeaderTableViewCell.swift in Sources */,
@@ -394,6 +399,7 @@
 				3CDB7A2F2044F463002A872B /* FeaturedTableViewCell.swift in Sources */,
 				3CDB7A15204439B0002A872B /* CategoryViewController.swift in Sources */,
 				3C6671462043CDFF00A260C6 /* RoundedButton.swift in Sources */,
+				3C0AE15A204FFA480010765D /* CartViewController.swift in Sources */,
 				3CDB7A322044F47B002A872B /* FeaturedHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

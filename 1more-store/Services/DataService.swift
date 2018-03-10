@@ -23,10 +23,10 @@ class DataService {
         // Dress Category
         //
         
-        let summerRed = Item(name: "Summer Red", price: 265, imageName: "summer-red", companyName: "Cotton-On", categeory: "Dresses")
-        let jerseyDress = Item(name: "Jersey Dress", price: 295, imageName: "jersey-dress-preview-large", companyName: "H&M", categeory: "Dresses")
-        let fireRed = Item(name: "Who's That Girl Midi", price: 390, imageName: "fire-red", companyName: "Alice McCall", categeory: "Dresses")
-        let oceanBlue = Item(name: "Mercer Floral-Print", price: 295, imageName: "ocean-blue", companyName: "Zimmerman", categeory: "Dresses")
+        let summerRed = Item(name: "Summer Red", price: 265, imageName: "summer-red", companyName: "Cotton-On", categeory: "Dresses", bigImage: "summer-red", previewImages: ["summer-red", "summer-red", "summer-red"])
+        let jerseyDress = Item(name: "Jersey Dress", price: 295, imageName: "jersey-dress-preview-large", companyName: "H&M", categeory: "Dresses", bigImage: "summer-red", previewImages: ["summer-red", "summer-red", "summer-red"])
+        let fireRed = Item(name: "Who's That Girl Midi", price: 390, imageName: "fire-red", companyName: "Alice McCall", categeory: "Dresses", bigImage: "summer-red", previewImages: ["summer-red", "summer-red", "summer-red"])
+        let oceanBlue = Item(name: "Mercer Floral-Print", price: 295, imageName: "ocean-blue", companyName: "Zimmerman", categeory: "Dresses", bigImage: "summer-red", previewImages: ["summer-red", "summer-red", "summer-red"])
         
         
         var cat = [Category] ()

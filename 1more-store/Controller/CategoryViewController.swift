@@ -10,7 +10,7 @@ import UIKit
 
 class CategoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-@IBOutlet weak var itemCollectionView : UICollectionView!
+    @IBOutlet weak var itemCollectionView : UICollectionView!
     @IBOutlet weak var topStackView : UIStackView!
     
     public var category = Category(title: "Placeholder", imageName: "placeholder", items: [])
@@ -47,4 +47,17 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         return CategoryViewCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ItemVC", sender: category.getItems()[indexPath.row])
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let itemVC = segue.destination as? ProductViewController {
+            assert(sender as? Item != nil)
+            itemVC.itemInit(item: sender as! Item)
+    }
+    }
 }
+
